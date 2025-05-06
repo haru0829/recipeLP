@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>recipe | 誰かの道が、あなたの道しるべに。</title>
-    <link rel="icon" href="logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         box-sizing: border-box;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: "Noto Sans JP", sans-serif;
         margin: 0;
         padding: 0;
       }
@@ -115,12 +118,14 @@
         color: #777;
       }
       @media (max-width: 768px) {
-        .main-visual, .feature {
+        .main-visual,
+        .feature {
           flex-direction: column !important;
           align-items: center;
           text-align: center;
         }
-        .main-visual-text, .feature-text {
+        .main-visual-text,
+        .feature-text {
           width: 100%;
         }
       }
@@ -132,32 +137,40 @@
         <img src="logo.png" alt="logo" class="logo-icon" />
         recipe
       </div>
-      <a href="https://recipe-app-pa4z.vercel.app/" class="cta-button">今すぐはじめる</a>
+      <a href="https://recipe-app-pa4z.vercel.app/" class="cta-button"
+        >今すぐはじめる</a
+      >
     </header>
 
     <section class="section main-visual">
-      <img src="lp1.png" alt="アプリ画面">
+      <img src="lp1.png" alt="アプリ画面" />
       <div class="main-visual-text">
         <h1>誰かの道が、あなたの道しるべに。</h1>
-        <a href="https://recipe-app-pa4z.vercel.app/" class="cta-button">今すぐはじめる</a>
+        <a href="https://recipe-app-pa4z.vercel.app/" class="cta-button"
+          >今すぐはじめる</a
+        >
       </div>
     </section>
 
     <section class="section">
       <h2>再現性のある努力で、目標達成をもっと簡単に。</h2>
-      <p>recipeは、目標達成までの具体的なロードマップを共有・実行できるアプリです。実体験に基づいた“再現性のある努力”を積み重ねることで、あなたも理想の道にたどりつけます。</p>
+      <p>
+        recipeは、目標達成までの具体的なロードマップを共有・実行できるアプリです。実体験に基づいた“再現性のある努力”を積み重ねることで、あなたも理想の道にたどりつけます。
+      </p>
     </section>
 
     <section class="section feature">
-      <img src="lp2.png" alt="特徴1">
+      <img src="lp2.png" alt="特徴1" />
       <div class="feature-text">
         <h2>1. 経験を投稿して、誰かの背中を押す。</h2>
-        <p>ステップごとに細かくタスクを分けて投稿できるから、誰にとっても再現しやすいレシピに。</p>
+        <p>
+          ステップごとに細かくタスクを分けて投稿できるから、誰にとっても再現しやすいレシピに。
+        </p>
       </div>
     </section>
 
     <section class="section feature reverse">
-      <img src="lp3.png" alt="特徴2">
+      <img src="lp3.png" alt="特徴2" />
       <div class="feature-text">
         <h2>2. 一歩ずつ「できた」を実感。</h2>
         <p>チェックを重ねていくだけで目標に近づく仕組み。習慣化もサポート。</p>
@@ -165,28 +178,29 @@
     </section>
 
     <section class="section feature">
-      <img src="lp4.png" alt="特徴3">
+      <img src="lp4.png" alt="特徴3" />
       <div class="feature-text">
         <h2>3. 人の道をなぞり、自分の道にする。</h2>
         <p>似た境遇や目的のレシピを検索し、目標達成に向けた道のりを効率化。</p>
       </div>
     </section>
 
-    <footer>
-      &copy; 2025 recipe | All rights reserved.
-    </footer>
+    <footer>&copy; 2025 recipe | All rights reserved.</footer>
 
     <script>
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
 
-      document.querySelectorAll('.section').forEach(section => {
+      document.querySelectorAll(".section").forEach((section) => {
         observer.observe(section);
       });
     </script>
